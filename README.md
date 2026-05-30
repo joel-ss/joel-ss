@@ -1,5 +1,3 @@
-# Joel
-
 > ☁️ Cloud · AWS · Infraestructura como Código
 
 ```hcl
