@@ -26,6 +26,7 @@ en el ecosistema de **AWS**.
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Packer](https://img.shields.io/badge/Packer-02A8EF?style=for-the-badge&logo=packer&logoColor=white)
 
 ---
 
@@ -42,13 +43,15 @@ Request, `apply` automático al hacer merge y estado remoto en S3 + DynamoDB con
 > visualizar el cambio de nodo/pod en cada despliegue.
 
 **🎓 DRACS Hybrid — Infraestructura en AWS** — [DRAC-QUEENS/AWS](https://github.com/DRAC-QUEENS/AWS)
-Trabajo Final de Grado (grupal): infraestructura híbrida que combina recursos
-on-premise y cloud. La parte de AWS provisiona, íntegramente con Terraform, una
-VPC segmentada en subredes pública/privada con un gateway VPN (WireGuard), un
-proxy inverso (Nginx) y un gestor de inventario (GLPI) aislado en la red privada,
-más NAT Gateway, Internet Gateway, Elastic IPs y Security Groups.
+Trabajo Final de Grado (grupal): infraestructura híbrida on-premise + cloud. La
+parte de AWS, escrita íntegramente en Terraform, despliega **GLPI** (ticketing e
+inventario) sobre un **Auto Scaling Group multi-AZ**, con base de datos en **RDS
+(MariaDB)** y ficheros compartidos en **EFS**, expuesto con TLS a través de
+**NLB + ALB** y accesible desde la red on-premise mediante una **VPN WireGuard**.
+Incluye imágenes base construidas con **Packer**, segmentación de red
+pública/privada y copias de seguridad automatizadas.
 > *Mi parte:* diseñé y desarrollé toda la infraestructura de AWS en Terraform
-> (red, cómputo, seguridad y segmentación pública/privada).
+> (red, alta disponibilidad y balanceo, cómputo, seguridad y backups).
 
 **📚 Ejercicios de Cloud** — [joel-ss/optcloud](https://github.com/joel-ss/optcloud)
 Colección de ejercicios prácticos de la asignatura de Cloud, resueltos casi por
@@ -60,4 +63,5 @@ infraestructura como código.
 ### 📫 Dónde encontrarme
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joel-sanchez-simon/)
+
 ![Estadísticas](https://github-readme-stats.vercel.app/api?username=joel-ss&show_icons=true&theme=default)
