@@ -64,4 +64,5 @@ infraestructura como código.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joel-sanchez-simon/)
 
-![Estadísticas](https://github-readme-stats.vercel.app/api?username=joel-ss&show_icons=true&theme=default)
+<!--![Estadísticas](https://github-readme-stats.vercel.app/api?username=joel-ss&show_icons=true&theme=default)
+-->
